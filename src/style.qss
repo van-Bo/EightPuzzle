@@ -1,0 +1,92 @@
+QTableView {
+    background-color: #f2f2f2;  /* 背景颜色 */
+    gridline-color: #d3d3d3;    /* 网格线颜色 */
+    border: 1px solid #cccccc;  /* 边框颜色 */
+    border-radius: 10px;        /* 圆角效果 */
+}
+
+QTableView::item {
+    padding: 8px;              /* 单元格内边距 */
+    border: none;              /* 无边框 */
+    background-color: #ffffff; /* 单元格背景颜色 */
+    color: #555555;            /* 单元格文字颜色 */
+    font-family: "Segoe UI";   /* 字体 */
+    font-size: 16px;           /* 字体大小 */
+}
+
+QTableView::item:selected {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #009688, stop:1 #00796b
+    ); /* 渐变背景颜色 */
+    color: #ffffff;            /* 选中单元格文字颜色 */
+    border: 1px solid #00796b; /* 突起效果 */
+    border-radius: 10px;       /* 外边框圆角效果 */
+    margin: 0px;               /* 外边框内边距 */
+    padding: 0px;              /* 内边框内边距 */
+    background-clip: padding-box; /* 内边框圆角效果 */
+}
+
+QHeaderView::section {
+    background-color: #d3d3d3; /* 表头背景颜色 */
+    color: #333333;            /* 表头文字颜色 */
+    padding: 5px;              /* 表头内边距 */
+    border: none;              /* 表头无边框 */
+    font-family: "Segoe UI";   /* 表头字体 */
+    font-size: 14px;           /* 表头字体大小 */
+}
+
+QPushButton {
+    background-color: #F0F0F0; /* 浅灰色背景 */
+    border: 1px solid #A9A9A9; /* 深灰色边框 */
+    color: #000000; /* 黑色文字 */
+    padding: 7px 12px; /* 调整内边距，使按钮变小 */
+    text-align: center; /* 文字居中 */
+    text-decoration: none; /* 无下划线 */
+    font-size: 17px; /* 调整字体大小 */
+    margin: 4px 2px; /* 外边距 */
+    border-radius: 12px; /* 圆角 */
+    background-image: linear-gradient(to bottom, #D3D3D3, #A9A9A9); /* 渐变背景 */
+}
+
+QPushButton:hover {
+    background-color: #85BCC7; /* 悬停时背景变为浅蓝色 */
+    color: #000000; /* 悬停时文字保持黑色 */
+    border: 1px solid #000000; /* 悬停时边框变为黑色 */
+    background-image: linear-gradient(to bottom, #ADD8E6, #87CEEB); /* 渐变背景 */
+}
+
+QListWidget {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Arial; /* 设置字体 */
+    font-size: 16px;    /* 设置字体大小 */
+}
+
+QListWidget::item {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 3px;
+    color: #333333;
+    text-align: center; /* 居中显示内容 */
+    font-family: Arial; /* 设置字体 */
+    font-size: 16px;    /* 设置字体大小 */
+}
+
+QListWidget::item:selected {
+    background-color: #ffa07a; /* 选中时背景颜色 */
+    color: #ffffff;            /* 选中时文字颜色 */
+    border: 1px solid #ffa07a; /* 选中时边框颜色，与背景颜色一致 */
+    border-radius: 3px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;        /* 居中显示内容 */
+    font-family: Arial;        /* 设置字体 */
+    font-size: 16px;           /* 设置字体大小 */
+}
+
+
