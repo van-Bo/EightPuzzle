@@ -11,6 +11,10 @@
 3. 对比分析不同评价函数对搜索算法的影响。
 4. 分析某种启发式搜索算法（A*）的特点。
 
+![image1](/images/MainWidget.png)
+![image2](/images/ModifyStartState.png)
+![image3](/images/876x34512.png)
+![image4](/images/74561283x.png)
 
 ## 要点分析
 ### 递归解决八数码问题
